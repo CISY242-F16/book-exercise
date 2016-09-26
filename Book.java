@@ -41,5 +41,10 @@ public class Book
         System.out.println("The # of pages is : " + pages);
     }
     
+    public void printDetails()
+    {
+        System.out.println("Author : " + author + ", Title : " + title + ", # of pages : " + pages);
+    }
+    
     // Add the methods here ...
 }
