@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=bookAuthor\ bookTitle\ bookPages
-comment0.target=Book(java.lang.String,\ java.lang.String,\ int)
+comment0.params=bookAuthor\ bookTitle\ bookPages\ courseBook
+comment0.target=Book(java.lang.String,\ java.lang.String,\ int,\ boolean)
 comment0.text=\r\n\ Set\ the\ author\ and\ title\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n
 comment1.params=
 comment1.target=void\ printAuthor()
@@ -18,4 +18,6 @@ comment7.params=
 comment7.target=void\ getBorrowed()
 comment8.params=
 comment8.target=void\ getRefNumber()
-numComments=9
+comment9.params=
+comment9.target=void\ isCourseText()
+numComments=10
