@@ -14,6 +14,7 @@ public class Book
     private String title;
     private int pages;
     private String refNumber = "";
+    public int borrowed = 0;
 
     /**
      * Set the author and title fields when this object
@@ -44,16 +45,29 @@ public class Book
     public void printDetails()
     {
         if (refNumber.length() > 0)
-            System.out.println("Author : " + author + ", Title : " + title + ", # of pages : " + pages + ", Reference Number : " + refNumber);
+            System.out.println("Author : " + author + ", Title : " + title + ", # of pages : " + pages + ", Reference Number : " + refNumber + ", Times Borrowed : " + borrowed);
         else
-            System.out.println("Author : " + author + ", Title : " + title + ", # of pages : " + pages + ", Reference Number : ZZZ");
+            System.out.println("Author : " + author + ", Title : " + title + ", # of pages : " + pages + ", Reference Number : ZZZ" + ", Times Borrowed : " + borrowed);
     }
     
     public void setRefNumber(String ref)
     {
-        refNumber = ref;
+        if (ref.length() > 2)
+            refNumber = ref;
+        else 
+            System.out.println("Please enter a string of 3 or more characters, thank you!");
     }
     
+    public void Borrow()
+    {
+        borrowed ++;
+    }
+    
+    public void getBorrowed()
+    {
+        System.out.println("Times Borrowed : " + borrowed);
+    }
+   
     public void getRefNumber()
     {
         System.out.println("Reference Number : " + refNumber);
